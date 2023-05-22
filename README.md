@@ -9,4 +9,4 @@ https://github.com/Rapptz/discord.py
 
 The code listed has the token removed.
 
-This line is me testing git on vscode
+Update 5/21/2023: I have decided to convert all the python code into javascript. While python was much easier to work with, I wanted to learn js in a way that was fun for me.
