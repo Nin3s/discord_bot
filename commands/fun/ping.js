@@ -1,5 +1,4 @@
-
-const { SlashCommandBuilder } = require("discord.js");
+const { SlashCommandBuilder } = require('discord.js');
 
 // placed in module exports so it can be read by other files, such as command loader/deployment scripts
 module.exports = {
@@ -8,5 +7,5 @@ module.exports = {
         .setDescription('replies with pong'),
     async execute(interaction) {
         await interaction.reply('pong!!');
-    }
-}
+    },
+};
