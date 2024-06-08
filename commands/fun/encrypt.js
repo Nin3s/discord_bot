@@ -1,5 +1,5 @@
 const {SlashCommandBuilder} = require('discord.js');
-const {caesar} = require('./cipher/caesar.js');
+const {caesarEncrypt} = require('./cipher/caesar.js');
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -30,9 +30,9 @@ module.exports = {
         if (interaction.options.getSubcommand() === 'caesar') {
             const key = interaction.options.getInteger('shift')
             const plaintext = interaction.options.getString('message')
-            let message = caesar(key, plaintext)
+            let message = caesarEncrypt(key, plaintext)
 
-            await interaction.reply(`Encrypted message with key of ${key}: \n > ${message}`)
+            await interaction.reply(`**Original Message:** \n > ${plaintext}\n\n**Encrypted message with key of ${key}:** \n > ${message}`)
         }
     }
 }

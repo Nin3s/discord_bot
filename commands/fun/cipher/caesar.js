@@ -3,7 +3,7 @@
 // https://www.freecodecamp.org/news/efficient-string-building-in-javascript/
 
 
-function caesar(key, plaintext) {
+function caesarEncrypt(key, plaintext) {
     let res = []
 
     for (let i = 0; i < plaintext.length; i++){
@@ -28,4 +28,4 @@ function caesar(key, plaintext) {
     return res
 }
 
-module.exports = {caesar}
+module.exports = {caesarEncrypt}
